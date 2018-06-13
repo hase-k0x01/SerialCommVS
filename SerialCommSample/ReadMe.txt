@@ -1,46 +1,46 @@
 ===============================================================================
-    Visual C++ 2008 �p �V���A���ʐM�T���v�� Ver 0.10
-    Copyright(C) altemasoft.com
+    Visual C++ 2008 用 シリアル通信サンプル Ver 0.10
+    Copyright(C) hasekou.
 ===============================================================================
 
-���̃A�v���P�[�V�����́AVisual C++ 2008 �ŃV���A���ʐM���s�����߂�
-�T���v���v���O�����ł��B
-���̃T���v���v���O�����́A���L�̋@�\�������Ă��܂�
-�@�E��s���́A�e�L�X�g�f�[�^�̑��M�Ǝ�M
-�@�E�L���ȃ|�[�g���̗�
-�@�E�|�[�g���E�{�[���[�g�Ȃǂ̃��X�g�{�b�N�X����̑I��
+このアプリケーションは、Visual C++ 2008 でシリアル通信を行うための
+サンプルプログラムです。
+このサンプルプログラムは、下記の機能を持っています
+　・一行ずつの、テキストデータの送信と受信
+　・有効なポート名の列挙
+　・ポート名・ボーレートなどのリストボックスからの選択
 
-���̃T���v���v���O�����́A���L�̂悤�ɓ��삵�܂��B
-�@�E�u�ڑ��v�{�^���������ƁA�|�[�g���E�{�[���[�g�Ȃǂ̐ݒ�_�C�A���O��\������B
-�@�E�ݒ�_�C�A���O�ɂāA��L����ݒ肷��B
-�@�E�e�L�X�g�{�b�N�X��ɕ��������͂��u���M�v�{�^���������ƁA�f�[�^�����M�����B
-�@�E�V���A���f�[�^����M����ƁA���荞�݂���������M�o�b�t�@�Ɏ�M�f�[�^���i�[�B
-�@�E��M���������́A�V���A���|�[�g��ɃG�R�[�o�b�N�����B
-�@�E���s��������M����ƁA�e�L�X�g�{�b�N�X��Ɏ�M�����������\������B
-�@
-���̃T���v���v���O�����́A���L�̂悤�ȃA�v���P�[�V�����̎Q�l�p�ɂ��g������������ƍl���܂��B
-�@�E�����Ȃǂ���̃f�[�^�擾
-�@�E�g�ݍ��݋@��̃f�B�o�b�O�p�f�[�^����M
-�@
-�@
-���̃T���v���v���O�����́A���L�̃��W���[��(�t�H�[��)����\������܂��B
-�@�EForm1 --- ���C���t�H�[���ł��B����M�����f�[�^���\������܂��B
-�@�EformSerialConfguration --- �|�[�g���E�{�[���[�g�Ȃǂ̐ݒ�_�C�A���O�ł��B
-�@
-�@�ڍׂ́A�T���v���v���O�������������������B
-�@
-�@���̃T���v���v���O�����ɑ΂���v�]�E���ӌ��Ȃǂ́A���L�܂ł��肢���܂��B
-�@
+このサンプルプログラムは、下記のように動作します。
+　・「接続」ボタンを押すと、ポート名・ボーレートなどの設定ダイアログを表示する。
+　・設定ダイアログにて、上記情報を設定する。
+　・テキストボックス上に文字列を入力し「送信」ボタンを押すと、データが送信される。
+　・シリアルデータを受信すると、割り込みが発生し受信バッファに受信データを格納。
+　・受信した文字は、シリアルポート上にエコーバックされる。
+　・改行文字を受信すると、テキストボックス上に受信した文字列を表示する。
+　
+このサンプルプログラムは、下記のようなアプリケーションの参考用にお使いいただけると考えます。
+　・測定器などからのデータ取得
+　・組み込み機器のディバッグ用データ送受信
+　
+　
+このサンプルプログラムは、下記のモジュール(フォーム)から構成されます。
+　・Form1 --- メインフォームです。送受信したデータが表示されます。
+　・formSerialConfguration --- ポート名・ボーレートなどの設定ダイアログです。
+　
+　詳細は、サンプルプログラム中をご覧下さい。
+　
+　このサンプルプログラムに対する要望・ご意見などは、下記までお願いします。
+　
 ===============================================================================
-Copyright(C) altemasoft.com
+Copyright(C) hasekou.
 <SOFTWARE_INFORMATION>
- <SOFTWARE_NAME> Visual C++ 2008 �p �V���A���ʐM�T���v�� </SOFTWARE_NAME>
+ <SOFTWARE_NAME> Visual C++ 2008 用 シリアル通信サンプル </SOFTWARE_NAME>
  <SOFTWARE_VERSION> 0.10 </SOFTWARE_VERSION>
 </SOFTWARE_INFORMATION>
 
 <AUTHOR_INFORMATION>
- <AUTHOUR_NAME> �x�C�K�[ </AUTHOUR_NAME>
- <WEBSITE_URL>http://www.altemasoft.com/</WEBSITE_URL>
- <EMAIL_ADDRESS>koichi_hasegawa@altemasoft.com</EMAIL_ADDRESS>
+ <AUTHOUR_NAME> はせこう。 </AUTHOUR_NAME>
+ <WEBSITE_URL> https://github.com/hasekou/ </WEBSITE_URL>
+ <EMAIL_ADDRESS> hase.1118@gmail.com </EMAIL_ADDRESS>
 </AUTHOR_INFORMATION>
 ===============================================================================
